@@ -16,8 +16,8 @@ public class TimeUnitConfiguration{
     }
 
     @Bean
-    public TimeUnit getTimeUnit(){
-
+    public TimeUnit getTimeUnit(TimeUnitParam param){
+        /*
         TimeUnit unidad = TimeUnit.SECONDS; //Find a better way
         if (timeUnit.getValue().equals(TimeUnit.valueOf("HOURS").toString())){
             unidad = TimeUnit.HOURS;
@@ -30,8 +30,8 @@ public class TimeUnitConfiguration{
         }
         if(timeUnit.getValue().equals(TimeUnit.valueOf("MILISECONDS").toString())){
             unidad = TimeUnit.MILISECONDS;
-        }
-        return unidad;
+        }*/
+        return TimeUnit.valueOf(param.getValue());
     }
 
     /*

@@ -1,5 +1,5 @@
 timeunit:
-  value: HOURS
+  value: MINUTES
 
 server:
   port: 18080
